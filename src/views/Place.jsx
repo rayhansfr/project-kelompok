@@ -2,13 +2,15 @@ import React from "react";
 
 const Place = () => {
   return (
-    <div>
-        <div className="flex justify-center items-center">
-        <h1 className="text-4xl font-bold text-white-800">Where to Find</h1>
-        </div>
-        <div>
-            <h4 className="text-s text-neutral-500">This is Place Page</h4>
-        </div>
+    <div className="grid grid-cols-1 grid-rows-2 ">
+      <div className="grid h-screen w-full text-center content-center">
+        <h1 className="text-4xl font-bold ">Where To Find?</h1>
+        <h4 className="text-sm text-neutral-500">Lokasi</h4>
+      </div>
+      <div className="grid h-screen w-full text-center content-center">
+        <h1 className="text-4xl font-bold ">Google Maps</h1>
+        <h4 className="text-sm text-neutral-500">Tempat Populer</h4>
+      </div>
     </div>
   );
 };

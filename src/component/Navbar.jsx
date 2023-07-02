@@ -1,16 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import './styles/Component.scss';
+import { Color } from "../values/Colors";
 
 const NavBar = () => {
+    const color = Color.dark;
+
     const menu =  [
-        {id: 1, text: 'Home', link: '/'},
-        {id: 2, text: 'Recipe', link: '/Recipe'},
-        {id: 3, text: 'Place', link: '/Place'},
-        {id: 4, text: 'Community', link: '/Community'},
+        {id: 1, text: 'Beranda', link: '/'},
+        {id: 2, text: 'Resep', link: '/Resep'},
+        {id: 3, text: 'Lokasi', link: '/Lokasi'},
+        {id: 4, text: 'Komunitas', link: '/Komunitas'},
     ];
     return (
-        <nav className="bg-[#ba3737fd]">
-            <div className="flex items-center justify-between px-2 py-4 mx-20">
+        <nav style={{backgroundColor: color}}>
+            <div className="flex items-center justify-between px-1 py-4 md:mx-20 sticky top-0">
                 <div className="text-white font-bold text-2xl">Kerak Telor</div>
                 <div>
                     <ul className="flex items-center space-x-4">
@@ -18,7 +22,7 @@ const NavBar = () => {
                             <li key = {comp.id}>
                                 <Link
                                 to={comp.link}
-                                className="text-white hover:underline transition-transform duration-300"
+                                className="navbar-items active:font-bold"
                                 >
                                 {comp.text}
                                 </Link>
@@ -28,7 +32,6 @@ const NavBar = () => {
                 </div>
             </div>
         </nav>
-
     )
 }
 export default NavBar
