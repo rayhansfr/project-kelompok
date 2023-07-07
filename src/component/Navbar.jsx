@@ -9,7 +9,7 @@ const NavBar = () => {
         {id: 4, text: 'Community', link: '/Community'},
     ];
     return (
-        <nav className="bg-[#ba3737fd]">
+        <nav className="bg-[#38b000] mb-4">
             <div className="flex items-center justify-between px-2 py-4 mx-20">
                 <div className="text-white font-bold text-2xl">Kerak Telor</div>
                 <div>
@@ -31,4 +31,5 @@ const NavBar = () => {
 
     )
 }
+
 export default NavBar
