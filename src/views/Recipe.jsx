@@ -13,34 +13,39 @@ const Recipe = () => {
   ]
 
   return (
-    <div className="text-center">
-      <div className="mx-auto" style={{ maxWidth: '560px' }}>
-        <iframe
-          title="YouTube video player"
-          width="100%"
-          height="315"
-          src={videoUrl.replace("watch?v=", "embed/")}
-          allowFullScreen
-        />
+    <div className="grid grid-cols-1 grid-rows-3 ">
+      <div className="grid h-screen w-full text-center content-center">
+          <h1 className="text-4xl font-bold ">Video Tutorial</h1>
+          <div className="mx-auto lg:w-full" style={{ maxWidth: '560px' }}>
+            <iframe
+              title="YouTube video player"
+              width="100%"
+              height="315"
+              src={videoUrl.replace("watch?v=", "embed/")}
+              allowFullScreen
+            />
+          </div>
       </div>
-
-      <div className="text-center mt-5 text-3xl font-semibold pb-2">
-        <p>Bahan - Bahan</p>
-      </div>
-      <div className="grid grid-cols-3 justify-items-center">
-      {bahan.map(({judul, desc, gambar}, idx ) => (
-        <div className="grid justify-between mt-8 ml-5 mr-5 w-64" key={idx}>
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full" src={gambar} />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{judul}</div>
-              <p className="text-gray-700 text-base">
-              {desc}
-              </p>
+      <div className="grid h-screen w-full text-center content-center">
+        <h1 className="text-4xl font-bold ">Bahan-Bahan</h1>
+        <div className="grid grid-cols-3 justify-items-center">
+        {bahan.map(({judul, desc, gambar}, idx ) => (
+          <div className="grid justify-between mt-8 ml-5 mr-5 w-64" key={idx}>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src={gambar} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{judul}</div>
+                <p className="text-gray-700 text-base">
+                {desc}
+                </p>
+              </div>
             </div>
           </div>
+        ))}
         </div>
-      ))}
+      </div>
+      <div className="grid h-screen w-full text-center content-center">
+        <h1 className="text-4xl font-bold ">Petunjuk Pembuatan</h1>
       </div>
     </div>
   );
