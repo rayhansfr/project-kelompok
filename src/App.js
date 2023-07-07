@@ -5,6 +5,7 @@ import Home from './views/Home';
 import Community from './views/Community';
 import Place from './views/Place';
 import Recipe from './views/Recipe';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             </Routes>
           </div>
       </Router>
+
+      <Footer />
     </div>
   );
 }

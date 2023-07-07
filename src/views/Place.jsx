@@ -1,6 +1,9 @@
 import React from "react";
+import Map from "../aset/Map.png";
 
 const Place = () => {
+  const placeDescription = 'Google Maps diatas merujuk ke salah satu tempat jualan kerak telor betawi. Dengan rating 4.7 di Google dengan 50 review';
+
   return (
     <div className="grid grid-cols-1 grid-rows-2 ">
       <div className="grid h-screen w-full text-center content-center">
