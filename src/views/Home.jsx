@@ -24,23 +24,23 @@ const Home = () => {
   return (
     <div className="grid grid-cols-1 grid-rows-3">
       <div className="w-full h-screen img-bg grid xl:grid-cols-2 md:grid-cols-2 content-center">
-          <div className="text-white mt-36 ml-20 sm:mr-20">
-            <h1 className="text-6xl font-bold">Kerak Telor</h1>
+          <div className="text-white mt-20 ml-20 sm:mr-20">
+            <h1 className="text-8xl font-bold">Kerak Telor</h1>
             <h1 className="text-2xl font-semibold">Makanan Tradisional khas Jakarta</h1>
-            <p className="mt-10 font-light">Kerak telor adalah jajanan tradisional Indonesia yang terbuat dari beras ketan, telur, dan rempah-rempah.Makanan ini merupakan jajanan kaki lima yang populer di Jawa, dan sering disajikan sebagai camilan atau makanan pembuka.</p>
+            <p className="mt-10 font-light text-md">Kerak telor adalah jajanan tradisional Indonesia yang terbuat dari beras ketan, telur, dan rempah-rempah.Makanan ini merupakan jajanan kaki lima yang populer di Jawa, dan sering disajikan sebagai camilan atau makanan pembuka.</p>
           <div className="mt-10">
             <a href="" className="bg-[#004B23] text-white rounded-3xl px-8 py-3 font-semibold inline-block mr-4 hover:bg-transparent hover:border hover:scale-105">Ayo, Kita Explore!</a>
           </div>
           </div>
           <div className="my-24">
-              <img className="scale-100 hover:scale-110 hover:rotate-3 drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" src={require('./assets/img/img-kt_1.png')}/>
+              <img className="scale-105 hover:scale-110 hover:rotate-3 drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" src={require('./assets/img/img-kt_1.png')}/>
           </div>
       </div>
       <div className="grid img-bg2 bg-center row-start-2 content-center">
         <div className="w-full h-full flex justify-center items-center backdrop-brightness-50">
-          <div className="text-white w-1/2 text-center">
+          <div className="text-white w-1/2 text-center p-6 my-6">
             <h1 className="text-white text-4xl font-bold">SEJARAH</h1>
-            <p className="mt-12 sm:text-sm"> Sejarah kerak telor tidak banyak diketahui, namun diyakini berasal dari istana-istana kerajaan Jawa. Konon, kerak telor pertama kali dibuat sebagai cara untuk menghabiskan sisa nasi. Hidangan ini kemudian menjadi populer di kalangan masyarakat umum, dan sekarang menjadi pemandangan umum di warung-warung dan pasar-pasar di seluruh Jawa. "</p>
+            <p className="mt-12 sm:text-xl"> Sejarah kerak telor tidak banyak diketahui, namun diyakini berasal dari istana-istana kerajaan Jawa. Konon, kerak telor pertama kali dibuat sebagai cara untuk menghabiskan sisa nasi. Hidangan ini kemudian menjadi populer di kalangan masyarakat umum, dan sekarang menjadi pemandangan umum di warung-warung dan pasar-pasar di seluruh Jawa</p>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Home = () => {
         <h1 className="mt-20 text-white text-4xl text-center font-bold">INFORMASI TAMBAHAN</h1>
         <div className="grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-rows-1 gap-8">
           {info.map((comp) => (
-            <div className="text-center text-white m-20 w-120 h-80 rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor:light}} key = {comp.id}>
+            <div className="text-center text-white m-20 w-120 h-80 rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] hover:scale-110" style={{backgroundColor:light}} key = {comp.id}>
               <h1 className="m-10 text-2xl font-semibold">
                 {comp.judul}
               </h1>

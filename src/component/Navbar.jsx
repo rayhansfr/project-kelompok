@@ -13,8 +13,8 @@ const NavBar = () => {
         {id: 4, text: 'Komunitas', link: '/Komunitas'},
     ];
     return (
-        <nav style={{backgroundColor: color}}>
-            <div className="flex items-center justify-between px-1 py-4 md:mx-20 sticky top-0">
+        <nav className="z-50 sticky top-0" style={{backgroundColor: color}}>
+            <div className="flex items-center justify-between px-1 py-4 md:mx-20">
                 <div className="text-white font-bold text-2xl">Kerak Telor</div>
                 <div>
                     <ul className="flex items-center space-x-4">
