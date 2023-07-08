@@ -1,17 +1,16 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import ItemsContainer from "./ItemsContainer";
+import { Color } from "../values/Colors";
 
 const Footer = () => {
+  const color = Color.dark;
+
   return (
-    <footer className="bg-[#38b000] text-white mt-4">
-      <div className="container mx-auto px-4">
-      <ItemsContainer />
-      <div
-        className="grid items-center h-full"
-      >
-        <span>© 2023. All About Kerak Telor.</span>
-      </div>
+    <footer className="text-white pb-5" style={{backgroundColor: color}}>
+      <div className="grid container items-center mx-auto px-4">
+        <ItemsContainer className="" />
+        <div className="grid items-center h-full">
+          <span className="text-center">© 2023. All About Kerak Telor.</span>
+        </div>
       </div>
     </footer>
   );

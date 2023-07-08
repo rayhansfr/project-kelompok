@@ -7,6 +7,7 @@ import Place from './views/Place';
 import Recipe from './views/Recipe';
 import Footer from './component/Footer';
 
+
 function App() {
   return (
     <div className='App'>

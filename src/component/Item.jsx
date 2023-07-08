@@ -7,7 +7,7 @@ const Item = ({ Links, title }) => {
       {Links.map((link) => (
         <li key={link.name}>
           <a
-            className="text-white-400 hover:text-red-300 duration-300
+            className="text-white-400 hover:text-slate-300 duration-300
           text-sm cursor-pointer leading-6"
             href={link.link}
           >
