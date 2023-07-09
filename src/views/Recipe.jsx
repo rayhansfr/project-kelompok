@@ -26,6 +26,7 @@ const Recipe = () => {
             />
           </div>
       </div>
+      
       <div className="grid h-screen w-full text-center content-center">
         <h1 className="text-4xl font-bold ">Bahan-Bahan</h1>
         <div className="grid grid-cols-3 justify-items-center">

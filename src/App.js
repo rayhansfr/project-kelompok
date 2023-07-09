@@ -6,6 +6,7 @@ import Community from './views/Community';
 import Place from './views/Place';
 import Recipe from './views/Recipe';
 import Footer from './component/Footer';
+import ScrollAtas from './component/ScrollAtas';
 
 function App() {
   return (
