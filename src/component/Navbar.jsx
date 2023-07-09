@@ -24,7 +24,7 @@ const NavBar = () => {
     
 
     return (
-        <nav className="z-50 sticky top-0 max-w-screen" style={{backgroundColor: dark}}>
+        <nav className="z-50 fixed top-0 w-screen" style={{backgroundColor: dark}}>
             <div className="flex items-center justify-between px-4 lg:px-0 py-4 md:mx-20">
                 <div className="text-white font-bold text-2xl">Kerak Telor</div>
                 <div className="hidden w-full md:flex md:items-center md:w-auto">
