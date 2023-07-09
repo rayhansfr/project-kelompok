@@ -47,7 +47,7 @@ const Home = () => {
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">SEJARAH</h2>
-                <p class="max-w-3xl mx-auto mb-10 text-lg text-gray-300">
+                <p class="max-w-3xl mx-auto mb-10 lg:text-lg text-gray-300">
                   Sejarah kerak telor tidak banyak diketahui, namun diyakini berasal dari istana-istana kerajaan Jawa. Konon, kerak telor pertama kali dibuat sebagai cara untuk menghabiskan sisa nasi. Hidangan ini kemudian menjadi populer di kalangan masyarakat umum, dan sekarang menjadi pemandangan umum di warung-warung dan pasar-pasar di seluruh Jawa.
                 </p>
               </div>
@@ -59,11 +59,11 @@ const Home = () => {
         <h1 className="mt-20 text-white text-4xl text-center font-bold">INFORMASI TAMBAHAN</h1>
         <div className="grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-rows-1 gap-8">
           {info.map((comp) => (
-            <div className="text-start p-10 text-white m-20 w-120 h-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] hover:scale-110" style={{backgroundColor:light}} key = {comp.id}>
-              <h1 className="text-3xl font-semibold">
+            <div style={{color: primary}} className="bg-slate-100 text-start p-10 text-white m-20 w-120 h-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] hover:scale-110" key = {comp.id}>
+              <h1 className="text-3xl font-semibold uppercase">
                 {comp.judul}
               </h1>
-              <p className="mt-5 text-md text-start">
+              <p className="mt-5 text-sm lg:text-md text-justify">
                 {comp.isi}
               </p>
             </div>

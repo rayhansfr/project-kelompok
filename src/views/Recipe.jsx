@@ -19,13 +19,13 @@ const Recipe = () => {
 
   return (
     <div className="bg-resep grid grid-cols-1">
-      <div className="grid w-full content-center py-20 pt-52">
-        <div className="grid lg:grid-cols-2 grid-cols-1">
-          <div className="text-white p-10 ml-20 w-9/12 rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
-              <h1 className="m-5 text-6xl font-semibold">
+      <div className="grid w-full place-content-center py-20 lg:pt-52">
+        <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center">
+          <div className="text-white p-10 lg:ml-20 w-9/12 lg:mb-0 mb-10 rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
+              <h1 className="m-5 text-4xl lg:text-6xl font-semibold">
               VIDEO TUTORIAL
               </h1>
-              <p className="m-5 text-lg text-start">
+              <p className="m-5 lg:text-lg text-start">
               Saksikan video untuk melihat bagaimana cara pembuatan Kerak Telor
             </p>
           </div>
@@ -41,10 +41,10 @@ const Recipe = () => {
         </div>
       </div>
       <div className="grid w-full content-center py-20">
-        <div className="bg-white text-start py-4 px-32">
-          <h1 className="text-8xl font-bold" style={{color: dark}}>BAHAN <span style={{color: light}}>BAKU</span></h1>
+        <div className="bg-white lg:text-start text-center py-4 lg:px-32">
+          <h1 className="lg:text-6xl text-4xl font-bold">BAHAN <span style={{color: light}}>BAKU</span></h1>
         </div>
-        <div className="grid h-auto grid-cols-1 lg:grid-cols-3 justify-items-center rounded-md">
+        <div className="grid h-auto grid-cols-1 lg:grid-cols-3 justify-items-center rounded-md px-12">
         {bahan.map(({judul, desc, gambar}, idx ) => (
           <div className="grid items-center mt-12 ml-5 mr-5 w-64 text-center" key={idx}>
             <div className="max-w-sm rounded overflow-hidden shadow-lg  hover:scale-105">
@@ -61,44 +61,44 @@ const Recipe = () => {
         </div>
       </div>
       <div className="grid w-full content-center py-20">
-        <div className="bg-white py-4 px-32 mb-10">
-          <h1 className="text-8xl font-bold text-end" style={{color: dark}}><span style={{color: light}}>LANGKAH </span>PEMBUATAN</h1>
+        <div className="bg-white py-4 lg:px-32 mb-10">
+          <h1 className="lg:text-6xl text-4xl text-center font-bold lg:text-end"><span style={{color: light}}>LANGKAH </span>PEMBUATAN</h1>
         </div>
-        <div className="grid grid-cols-1 grid-rows-5 my-5">
-          <div className="text-white p-10 py-5 mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
-              <h1 className="mx-10 text-4xl font-semibold">
+        <div className="grid grid-cols-1 grid-rows-5 px-14">
+          <div className="text-white lg:p-10 py-5 lg:mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
+              <h1 className="mx-10 mb-10 text-4xl font-semibold">
               LANGKAH KE-1
               </h1>
               <p className="mx-10 text-lg">
               Dalam mangkuk besar, campurkan beras, garam, bubuk kunyit, dan lada hitam. Aduk rata
             </p>
           </div>
-          <div className="text-white p-10 py-5 mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: primary}}>
-              <h1 className="mx-10 text-4xl font-semibold text-end">
+          <div className="text-white lg:p-10 py-5 lg:mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: primary}}>
+              <h1 className="mx-10 mb-10 text-4xl font-semibold text-end">
               LANGKAH KE-2
               </h1>
               <p className="mx-10 text-lg text-end">
               Tambahkan telur ke dalam campuran nasi dan aduk hingga tercampur rata
             </p>
           </div>
-          <div className="text-white p-10 py-5 mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: light}}>
-              <h1 className="mx-10 text-4xl font-semibold">
+          <div className="text-white lg:p-10 py-5 lg:mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: light}}>
+              <h1 className="mx-10 mb-10 text-4xl font-semibold">
               LANGKAH KE-3
               </h1>
               <p className="mx-10 text-lg">
               Panaskan minyak dalam wajan besar dengan api sedang
             </p>
           </div>
-          <div className="text-white p-10 py-5 mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: primary}}>
-              <h1 className="mx-10 text-4xl font-semibold text-end">
+          <div className="text-white lg:p-10 py-5 lg:mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: primary}}>
+              <h1 className="mx-10 mb-10 text-4xl font-semibold text-end">
               LANGKAH KE-4
               </h1>
               <p className="mx-10 text-lg text-end">
               Tambahkan sesendok penuh adonan nasi ke dalam minyak panas dan goreng hingga kedua sisinya berwarna cokelat keemasan
             </p>
           </div>
-          <div className="text-white p-10 py-5 mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
-              <h1 className="mx-10 text-4xl font-semibold">
+          <div className="text-white lg:p-10 py-5 lg:mx-20 mb-10 h-auto w-auto rounded-ss-3xl rounded-ee-3xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]" style={{backgroundColor: dark}}>
+              <h1 className="mx-10 mb-10 text-4xl font-semibold">
               LANGKAH KE-5
               </h1>
               <p className="mx-10 text-lg">
