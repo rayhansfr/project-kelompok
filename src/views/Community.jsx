@@ -12,14 +12,14 @@ const Community = () => {
   const light = Color.light;
 
   const team = [
-    {nama : 'Rayhan Safar Putra Dwiliano', nim : '2207411027', ig : 'https://www.instagram.com/rayhansfr', linkedin : 'https://www.linkedin.com/in/rayhan-safar-putra-dwiliano-62497324b/', gambar : Rehan},
-    {nama : 'Made Dharmagiri', nim : '2207411009', ig : 'https://www.instagram.com/madegiri04_', linkedin : 'https://www.linkedin.com/in/made-dharmagiri-15951a1bb/', gambar : Made}
+    {fnama : 'Rayhan Safar', lnama: ' Putra Dwiliano', nim : '2207411027', ig : 'https://www.instagram.com/rayhansfr', linkedin : 'https://www.linkedin.com/in/rayhan-safar-putra-dwiliano-62497324b/', gambar : Rehan},
+    {fnama : 'Made', lnama: ' Dharmagiri', nim : '2207411009', ig : 'https://www.instagram.com/madegiri04_', linkedin : 'https://www.linkedin.com/in/made-dharmagiri-15951a1bb/', gambar : Made}
   ]
 
   return (
     <div className="grid grid-cols-1 grid-rows-2">
-      <div className="bg-com grid lg:grid-cols-2 w-full text-center content-center p-20 mb-20 -mt-48">
-        <div className="grid grid-col-1 w-auto p-10 content-center">
+      <div className="bg-com grid lg:grid-cols-2 w-full text-center content-center p-20 mb-20 -mt-48 lg:-mt-0">
+        <div className="grid grid-col-1 w-auto p-10 content-center bg-slate-100 bg-opacity-50 rounded-2xl shadow-xl my-20">
           <h1 className="text-3xl lg:text-8xl font-bold uppercase">Gall<span style={{color: primary}}>ery</span></h1>
           <p className="mt-10 lg:text-2xl text-md font-semibold tracking-widest uppercase">Kerak Telor</p>
           <p className="my-10 lg:text-xl text-sm italic">Petualangan rasa yang membawa kita merasakan sejarah lewat cita rasa</p>
@@ -90,14 +90,14 @@ const Community = () => {
 
         <div className="h-auto w-auto grid-rows-2 grid-cols-2 grid-flow-row gap-6 flex flex-col mt-10 lg:mt-0">
           <div className="col-span-2">
-            <h1 className="lg:text-start text-3xl lg:text-6xl font-bold mb-10">OUR <span className="lg:text-6xl" style={{color: primary}}>TEAM</span></h1>
+            <h1 className="lg:text-start text-3xl lg:text-6xl font-bold lg:mb-10">OUR <span className="lg:text-6xl" style={{color: primary}}>TEAM</span></h1>
           </div>
-          {team.map(({nama, nim, ig, linkedin, gambar}, idx) => (
-            <div className="grid text-center bg-slate-200 place-items-center rounded-xl p-5 shadow-xl" key={idx}>
-            <img className="w-56 rounded-full" style={{background: primary}} src={gambar} alt="" /> 
+          {team.map(({fnama, lnama, nim, ig, linkedin, gambar}, idx) => (
+            <div className="bg-com2 grid text-center bg-slate-200 place-items-center rounded-xl p-5 shadow-xl" key={idx}>
+              <img className="w-56 rounded-full" style={{background: primary}} src={gambar} alt="" /> 
             <div className="py-5">
-              <h1 className="font-bold uppercase mb-2">{nama}</h1>
-              <p>{nim}</p>
+              <h1 className="font-bold lg:text-2xl uppercase mb-2">{fnama}<span style={{color: primary}}>{lnama}</span></h1>
+              <p className="text-xs font-bold">{nim}</p>
             </div>
             <div className="grid grid-flow-col grid-cols-2 gap-4">
               <a href={ig} target="_blank" rel="noopener noreferrer">
