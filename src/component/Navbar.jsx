@@ -16,7 +16,7 @@ const NavBar = () => {
         {id: 4, text: 'Komunitas', link: '/Komunitas'},
     ];
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     
     const toogleOpen = () => {
         setIsOpen(!isOpen)
