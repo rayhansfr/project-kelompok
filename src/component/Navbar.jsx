@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import $ from "jquery";
 import { Link } from "react-router-dom";
 import './styles/Component.scss';
 import { Color } from "../values/Colors";
@@ -18,8 +19,14 @@ const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(true);
     
-    const toogleOpen = () => {
+    const open = () => {
         setIsOpen(!isOpen)
+    }
+
+    const toogleOpen = () => {
+        $(document).ready(() => {
+            open();
+        })
     }
     
 

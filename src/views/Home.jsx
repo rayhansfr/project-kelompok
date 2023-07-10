@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import './styles/Home.scss';
 import { Link } from "react-router-dom";
 import { Color } from "../values/Colors";
