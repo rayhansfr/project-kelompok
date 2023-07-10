@@ -73,7 +73,7 @@ const NavBar = () => {
                 <ul className="">
                     {menu.map((comp) => (
                         <li className="py-1" key = {comp.id}>
-                            <Link
+                            <Link onClick={toogleOpen}
                             to={comp.link}
                             className="navbar-items active:font-bold"
                             >
